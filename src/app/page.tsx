@@ -72,7 +72,7 @@ export default function Home() {
             height={16}
             className="rounded-full"
           />
-          Gitgub: Jennga
+          GitHub: Jennga
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
