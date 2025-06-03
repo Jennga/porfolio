@@ -19,6 +19,9 @@ export default function Home() {
             Jennifer Galván
           </div>
         </div>
+        <div className="bg-green-500 text-white p-4 text-center">
+          Tailwind está funcionando
+        </div>
 
         <div className="flex gap-4 items-center justify-center flex-row w-full">
           <a
