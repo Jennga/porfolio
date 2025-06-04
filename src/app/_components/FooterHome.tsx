@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 const FooterHome = () => {
     return (
@@ -33,7 +32,7 @@ const FooterHome = () => {
             height={16}
             className="rounded-full"
           />
-          Linkedin
+          LinkedIn
         </a>
         </footer>)
 }
