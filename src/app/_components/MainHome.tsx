@@ -26,47 +26,38 @@ const buttonsContainerClass =
     "bg-white", // Opcional: para que se note el redondeado, ajusta según tu tema
     "dark:bg-[#7A86B6]" // Opcional: fondo en modo oscuro
   ].join(" ");
-const cvButtonClass =
-  [
-    "rounded-full",    
-    "transition-colors",
-    "flex",
-    "items-center",
-    "justify-center",
-    "bg-foreground",
-    "text-background",
-    "gap-2",
-    "hover:bg-[#f2f2f2]",
-    "dark:hover:bg-[#A8A4CE]",
-    "font-medium",
-    "text-sm",
-    "sm:text-base",
-    "h-10",
-    "sm:h-12",
-    "px-4",
-    "sm:px-5",
-    "w-full",
-    "sm:w-auto"
-  ].join(" ");
-const cyberButtonClass =
-  [
-    "rounded-full",
-    "transition-colors",
-    "flex",
-    "items-center",
-    "justify-center",
-    "hover:bg-[#A8A4CE]",
-    "dark:hover:bg-[#A8A4CE]",
-    "font-medium",
-    "text-sm",
-    "sm:text-base",
-    "h-10",
-    "sm:h-12",
-    "px-4",
-    "sm:px-5",
-    "w-full",
-    "sm:w-auto",    
-  ].join(" ");
+const baseButtonClass = [
+  "rounded-full",
+  "transition-colors",
+  "flex",
+  "items-center",
+  "justify-center",
+  "font-medium",
+  "text-sm",
+  "sm:text-base",
+  "h-10",
+  "sm:h-12",
+  "px-4",
+  "sm:px-5",
+  "w-full",
+  "sm:w-auto",
+  "hover:text-[#495C83]",
+].join(" ");
+
+const cvButtonClass = [
+  baseButtonClass,
+  "bg-foreground",
+  "text-background",
+  "gap-2",
+  "hover:bg-[#f2f2f2]",
+  "dark:hover:bg-[#A8A4CE]",
+].join(" ");
+
+const cyberButtonClass = [
+  baseButtonClass,
+  "hover:bg-[#A8A4CE]",
+  "dark:hover:bg-[#A8A4CE]",
+].join(" ");
 
 export default function MainHome() {
   return (

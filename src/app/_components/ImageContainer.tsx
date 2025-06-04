@@ -26,7 +26,7 @@ export default function ImageContainer() {
                 </span>
             </div>
             <div className="flex-1 flex justify-center md:justify-start md:ml-8 mb-6 md:mb-0 mt-20 md:mt-0">
-                <div className="w-full max-w-xl sm:max-w-2xl md:max-w-2xl min-h-[220px] flex items-center">
+                <div className="w-full min-w-[35dvw] flex items-center">
                     <Image
                         src="/caricaturamia.png"
                         alt="caricatura"
