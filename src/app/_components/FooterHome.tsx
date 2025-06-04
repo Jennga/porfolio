@@ -35,7 +35,6 @@ const FooterHome = () => {
           />
           Linkedin
         </a>
-        <Link href="/blog">BLOG</Link>
-      </footer>)
+        </footer>)
 }
 export default FooterHome;

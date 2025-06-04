@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import ImageContainer from './ImageContainer';
-
+import Link from 'next/link';
 const mainClass =
   [
     "flex",
@@ -83,22 +83,22 @@ export default function MainHome() {
     <main className={mainClass}>
         <ImageContainer />
       <div className={buttonsContainerClass}>
-        <a
+        <Link
           className={cvButtonClass}
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
-            className="dark:invert"
-            src="/vercel.svg"
-            alt="Vercel logomark"
+            className=""
+            src="/dragon.svg"
+            alt="dragon-boll"
             width={20}
             height={20}
           />
           CV
-        </a>
-        <a
+        </Link>
+        <Link
           className={cyberButtonClass}
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
@@ -112,7 +112,7 @@ export default function MainHome() {
             height={22}
           />
           Cyber
-        </a>
+        </Link>
       </div>
     </main>
   );
