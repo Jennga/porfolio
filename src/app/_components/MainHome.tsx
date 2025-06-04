@@ -20,14 +20,15 @@ const buttonsContainerClass =
     "gap-4",
     "items-center",
     "justify-center",
-    "w-full"
+    "w-auto",
+    "rounded-2xl", // <-- Añadido para bordes redondeados
+    "p-2.5",
+    "bg-white", // Opcional: para que se note el redondeado, ajusta según tu tema
+    "dark:bg-[#7A86B6]" // Opcional: fondo en modo oscuro
   ].join(" ");
 const cvButtonClass =
   [
-    "rounded-full",
-    "border",
-    "border-solid",
-    "border-transparent",
+    "rounded-full",    
     "transition-colors",
     "flex",
     "items-center",
@@ -35,8 +36,8 @@ const cvButtonClass =
     "bg-foreground",
     "text-background",
     "gap-2",
-    "hover:bg-[#383838]",
-    "dark:hover:bg-[#ccc]",
+    "hover:bg-[#f2f2f2]",
+    "dark:hover:bg-[#A8A4CE]",
     "font-medium",
     "text-sm",
     "sm:text-base",
@@ -50,17 +51,12 @@ const cvButtonClass =
 const cyberButtonClass =
   [
     "rounded-full",
-    "border",
-    "border-solid",
-    "border-black/[.08]",
-    "dark:border-white/[.145]",
     "transition-colors",
     "flex",
     "items-center",
     "justify-center",
-    "hover:bg-[#f2f2f2]",
-    "dark:hover:bg-[#1a1a1a]",
-    "hover:border-transparent",
+    "hover:bg-[#A8A4CE]",
+    "dark:hover:bg-[#A8A4CE]",
     "font-medium",
     "text-sm",
     "sm:text-base",
@@ -68,9 +64,8 @@ const cyberButtonClass =
     "sm:h-12",
     "px-4",
     "sm:px-5",
-    "w-fit",
-    "sm:w-auto",
-    "md:w-[158px]"
+    "w-full",
+    "sm:w-auto",    
   ].join(" ");
 
 export default function MainHome() {
