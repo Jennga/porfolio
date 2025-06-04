@@ -20,7 +20,7 @@ export default function ImageContainer() {
                 <br />
                 <span
                     style={textStyle}
-                    className="block text-3xl sm:text-4xl md:text-[3.7rem]"
+                    className="block text-3xl sm:text-4xl md:text-[3rem]"
                 >
                     CIBERSEGURIDAD
                 </span>
