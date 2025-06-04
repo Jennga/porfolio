@@ -12,9 +12,6 @@ const mainClass =
     "w-full",
     "max-w-4xl"
   ].join(" ");
-
-
-
 const buttonsContainerClass =
   [
     "flex",
@@ -25,7 +22,6 @@ const buttonsContainerClass =
     "justify-center",
     "w-full"
   ].join(" ");
-
 const cvButtonClass =
   [
     "rounded-full",
@@ -51,7 +47,6 @@ const cvButtonClass =
     "w-full",
     "sm:w-auto"
   ].join(" ");
-
 const cyberButtonClass =
   [
     "rounded-full",
@@ -73,7 +68,7 @@ const cyberButtonClass =
     "sm:h-12",
     "px-4",
     "sm:px-5",
-    "w-full",
+    "w-fit",
     "sm:w-auto",
     "md:w-[158px]"
   ].join(" ");
@@ -85,9 +80,7 @@ export default function MainHome() {
       <div className={buttonsContainerClass}>
         <Link
           className={cvButtonClass}
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/menu/cv"
         >
           <Image
             className=""
@@ -100,9 +93,7 @@ export default function MainHome() {
         </Link>
         <Link
           className={cyberButtonClass}
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/menu/cyber"
         >
           <Image
             className="text-black mr-2.5"
@@ -111,7 +102,7 @@ export default function MainHome() {
             width={22}
             height={22}
           />
-          Cyber
+          BLOG CIBERSEGURIDAD
         </Link>
       </div>
     </main>

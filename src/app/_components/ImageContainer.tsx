@@ -1,56 +1,42 @@
 import Image from 'next/image';
+
 export default function ImageContainer() {
-    const imageContainerClass =
-  [
-    "relative",
-    "w-full",
-    "max-w-xs",
-    "sm:max-w-md",
-    "md:max-w-lg"
-  ].join(" ");
+    const textStyle: React.CSSProperties = {
+        fontWeight: 'bold',
+        WebkitTextStroke: '2px #DDE6ED',
+        color: 'transparent',
+        display: 'block',
+    };
 
-const topTextClass =
-  [
-    "absolute",
-    "top-0",
-    "right-0",
-    "text-base",
-    "sm:text-xl",
-    "md:text-2xl",
-    "font-semibold",
-    "text-right",
-    "p-2",
-    "sm:p-6"
-  ].join(" ");
-
-const bottomTextClass =
-  [
-    "absolute",
-    "bottom-0",
-    "left-0",
-    "text-xs",
-    "sm:text-sm",
-    "md:text-base",
-    "font-semibold",
-    "text-left",
-    "p-1",
-    "sm:p-2"
-  ].join(" ");
     return (
-    <div className={imageContainerClass}>
-            <div className={topTextClass}>
-              Ciberseguridad
+        <div className="flex flex-col-reverse md:flex-row items-center md:items-center mt-[-120px] px-4">
+            <div className="flex-1 text-center md:text-left mt-6 md:mt-0">
+                <span
+                    style={textStyle}
+                    className="block text-4xl sm:text-5xl md:text-[4.5rem]"
+                >
+                    JENNIFER
+                </span>
+                <br />
+                <span
+                    style={textStyle}
+                    className="block text-3xl sm:text-4xl md:text-[3.7rem]"
+                >
+                    CIBERSEGURIDAD
+                </span>
             </div>
-            <Image
-              src="/caricaturamia.png"
-              alt="caricatura"
-              width={500}
-              height={80}
-              priority
-              className="w-full h-auto rounded-lg"
-            />
-            <div className={bottomTextClass}>
-              Jennifer Galván
+            <div className="flex-1 flex justify-center md:justify-start md:ml-8 mb-6 md:mb-0 mt-20 md:mt-0">
+                <div className="w-full max-w-xl sm:max-w-2xl md:max-w-2xl min-h-[220px] flex items-center">
+                    <Image
+                        src="/caricaturamia.png"
+                        alt="caricatura"
+                        width={600}
+                        height={600}
+                        priority
+                        className="w-full h-auto rounded-lg object-contain"
+                    />
+                </div>
             </div>
-          </div>)
+        </div>
+    );
 }

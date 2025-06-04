@@ -7,17 +7,37 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --gradient-bg: 
+    radial-gradient(at 74.66% 33.59%, hsla(220, 55%, 18%, 0.32) 0%, hsla(220, 55%, 18%, 0) 100%),
+    radial-gradient(at 18.53% 50.71%, hsla(210, 75%, 38%, 0.22) 0%, hsla(210, 75%, 38%, 0) 100%),
+    radial-gradient(at 59.57% 92.94%, hsla(210, 65%, 45%, 0.18) 0%, hsla(210, 65%, 45%, 0) 100%),
+    radial-gradient(at 46.22% 29.92%, hsla(215, 35%, 24%, 0.22) 0%, hsla(215, 35%, 24%, 0) 100%),
+    radial-gradient(at 19.87% 86.14%, hsla(210, 40%, 90%, 0.10) 0%, hsla(210, 40%, 90%, 0) 100%),
+    radial-gradient(at 68.98% 0.31%, hsla(220, 55%, 18%, 0.22) 0%, hsla(220, 55%, 18%, 0) 100%),
+    radial-gradient(at 46.39% 47.39%, hsla(210, 75%, 38%, 0.17) 0%, hsla(210, 75%, 38%, 0) 100%),
+    radial-gradient(at 16.88% 28.86%, hsla(210, 65%, 45%, 0.13) 0%, hsla(210, 65%, 45%, 0) 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #526D82;
     --foreground: #DDE6ED;
+    --gradient-bg: 
+      radial-gradient(at 74.66% 33.59%, hsla(220, 55%, 18%, 0.40) 0%, hsla(220, 55%, 18%, 0) 100%),
+      radial-gradient(at 18.53% 50.71%, hsla(210, 75%, 38%, 0.28) 0%, hsla(210, 75%, 38%, 0) 100%),
+      radial-gradient(at 59.57% 92.94%, hsla(210, 65%, 45%, 0.22) 0%, hsla(210, 65%, 45%, 0) 100%),
+      radial-gradient(at 46.22% 29.92%, hsla(215, 35%, 24%, 0.26) 0%, hsla(215, 35%, 24%, 0) 100%),
+      radial-gradient(at 19.87% 86.14%, hsla(210, 40%, 90%, 0.08) 0%, hsla(210, 40%, 90%, 0) 100%),
+      radial-gradient(at 68.98% 0.31%, hsla(220, 55%, 18%, 0.26) 0%, hsla(220, 55%, 18%, 0) 100%),
+      radial-gradient(at 46.39% 47.39%, hsla(210, 75%, 38%, 0.20) 0%, hsla(210, 75%, 38%, 0) 100%),
+      radial-gradient(at 16.88% 28.86%, hsla(210, 65%, 45%, 0.15) 0%, hsla(210, 65%, 45%, 0) 100%);
   }
 }
 
 body {
-  background: var(--background);
+  background: var(--gradient-bg, var(--background));
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
