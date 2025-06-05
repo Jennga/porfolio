@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import ImageContainer from './ImageContainer';
 import Link from 'next/link';
+import Tecnology from './Tecnology';
+
 const mainClass =
   [
     "flex",
@@ -24,7 +26,7 @@ const buttonsContainerClass =
     "rounded-2xl", // <-- Añadido para bordes redondeados
     "p-2.5",
     "bg-white", // Opcional: para que se note el redondeado, ajusta según tu tema
-    "dark:bg-[#7A86B6]" // Opcional: fondo en modo oscuro
+    "[background:linear-gradient(90deg,#fffbbb,#8c66b4,#b88eba)]"
   ].join(" ");
 const baseButtonClass = [
   "rounded-full",
@@ -32,9 +34,9 @@ const baseButtonClass = [
   "flex",
   "items-center",
   "justify-center",
-  "font-medium",
-  "text-sm",
-  "sm:text-base",
+  "font-bold",
+  "text-base",         // Más grande en móvil
+  "sm:text-lg",        // Más grande en pantallas grandes
   "h-10",
   "sm:h-12",
   "px-4",
@@ -51,12 +53,14 @@ const cvButtonClass = [
   "gap-2",
   "hover:bg-[#f2f2f2]",
   "dark:hover:bg-[#A8A4CE]",
+  "[color:#003161]"
 ].join(" ");
 
 const cyberButtonClass = [
   baseButtonClass,
   "hover:bg-[#A8A4CE]",
   "dark:hover:bg-[#A8A4CE]",
+  "[color:#003161]"
 ].join(" ");
 
 export default function MainHome() {
@@ -91,6 +95,7 @@ export default function MainHome() {
           BLOG CIBERSEGURIDAD
         </Link>
       </div>
+       <Tecnology/>
     </main>
   );
 }

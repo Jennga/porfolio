@@ -5,7 +5,7 @@ import FooterHome from "./_components/FooterHome";
 const containerClass =
   [
     "grid",
-    "grid-rows-[20px_1fr_20px]",
+    "grid-rows-[20px_1fr_auto]",
     "items-center",
     "justify-items-center",
     "min-h-screen",
