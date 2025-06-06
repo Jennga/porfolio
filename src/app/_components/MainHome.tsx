@@ -23,10 +23,11 @@ const buttonsContainerClass =
     "items-center",
     "justify-center",
     "w-auto",
-    "rounded-2xl", // <-- Añadido para bordes redondeados
+    "rounded-2xl",
     "p-2.5",
-    "bg-white", // Opcional: para que se note el redondeado, ajusta según tu tema
-    "[background:linear-gradient(90deg,#fffbbb,#8c66b4,#b88eba)]"
+    "bg-gradient-to-r", // De izquierda a derecha
+    "from-[#8ea0dd]",
+    "to-[#8e6ad3]"
   ].join(" ");
 const baseButtonClass = [
   "rounded-full",
