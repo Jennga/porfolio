@@ -4,7 +4,7 @@ export default function Tecnology() {
     const containerStyle: React.CSSProperties = {
         width: '95vw',
         padding: '16px',
-        color: '#DCD7C9',
+        color: '#d1d3f9',
     };
 
     const sectionTitleStyle: React.CSSProperties = {
@@ -30,9 +30,8 @@ export default function Tecnology() {
 
     const imageStyle: React.CSSProperties = {
         padding: '8px',
-        background: 'linear-gradient(90deg, #4871b5,#1f4788,#4871b5)',
+        background: '#d1d3f9',
         borderRadius: '8px',
-        boxShadow: '0 1px 4px rgba(0,0,0,0.05)',
         width: '4vw',
         height: '4vw',
         minWidth: '48px',
@@ -43,7 +42,8 @@ export default function Tecnology() {
         borderRadius: '25px',
         padding: '16px',
         margin: '16px',
-        background: 'linear-gradient(90deg, #554c5e, #5f758f, #64a2b0)',
+        border: '2px double rgba(72, 113, 181, 1)', // Borde doble sutil
+        backdropFilter: 'blur(2px)',
     };
     const cyberStyle: React.CSSProperties = {
         padding: '16px',
@@ -112,46 +112,42 @@ export default function Tecnology() {
             <div style={tecnolStyle}>
                 <h2 style={sectionTitleStyle}>Cloud</h2>
                 <div style={imagesRowStyle}>
-                    <Image style={imageStyle} src="tecno/debian.svg" alt="debian" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/kali.svg" alt="kali" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/ubuntu.svg" alt="ubuntu" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/windows.svg" alt="windows" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/aws.svg" alt="aws" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/azure.svg" alt="azure" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/digitalocean.svg" alt="digitalosean" width={60} height={60}/>
                 </div>                               
             </div>
             <div style={tecnolStyle}>
                 <h2 style={sectionTitleStyle}>Virtualización</h2>
                 <div style={imagesRowStyle}>
-                    <Image style={imageStyle} src="tecno/debian.svg" alt="debian" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/kali.svg" alt="kali" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/ubuntu.svg" alt="ubuntu" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/windows.svg" alt="windows" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/VirtualBox.svg" alt="vitulbox" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/Vmware.svg" alt="vmware" width={60} height={60}/>
                 </div>                               
             </div>
             <div style={tecnolStyle}>
                 <h2 style={sectionTitleStyle}>Lenguaje de programación</h2>
                 <div style={imagesRowStyle}>
-                    <Image style={imageStyle} src="tecno/debian.svg" alt="debian" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/kali.svg" alt="kali" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/ubuntu.svg" alt="ubuntu" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/windows.svg" alt="windows" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/bash.svg" alt="bash" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/python.svg" alt="python" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/powershell.svg" alt="powershell" width={60} height={60}/>
                 </div>                               
             </div>
             <div style={tecnolStyle}>
                 <h2 style={sectionTitleStyle}>Frameworks</h2>
                 <div style={imagesRowStyle}>
-                    <Image style={imageStyle} src="tecno/debian.svg" alt="debian" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/kali.svg" alt="kali" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/ubuntu.svg" alt="ubuntu" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/windows.svg" alt="windows" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/html.svg" alt="html" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/css.svg" alt="css" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/php.svg" alt="php" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/nextjs.svg" alt="nextjs" width={60} height={60}/>
                 </div>                               
             </div>
             <div style={tecnolStyle}>
                 <h2 style={sectionTitleStyle}>Base de datos</h2>
                 <div style={imagesRowStyle}>
-                    <Image style={imageStyle} src="tecno/debian.svg" alt="debian" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/kali.svg" alt="kali" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/ubuntu.svg" alt="ubuntu" width={60} height={60}/>
-                    <Image style={imageStyle} src="tecno/windows.svg" alt="windows" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/sql.svg" alt="sql" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/sqlite.svg" alt="sqlite" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/mysql.svg" alt="mysql" width={60} height={60}/>
+                    <Image style={imageStyle} src="tecno/mariadb.svg" alt="mariadb" width={60} height={60}/>
                 </div>                               
             </div>
         </div>                   

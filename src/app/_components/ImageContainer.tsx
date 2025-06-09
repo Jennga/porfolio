@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function ImageContainer() {
     const textStyle: React.CSSProperties = {
         fontWeight: 'bold',
-        WebkitTextStroke: '2px #DCD7C9',
+        WebkitTextStroke: '2px #d1d3f9',
         color: 'transparent',
         display: 'block',
     };
