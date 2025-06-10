@@ -1,11 +1,18 @@
+"use client";
+import Menu from './Menu';
+import Logros from './Logros';
+import Analisis from './Analisis';
+import Hacking from './Hacking';
+import Normativa from './Normativa';
+import React, { useState, useEffect } from 'react';
 export default function CyberPage() {
     return (
-        <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl font-bold">Ciberseguridad</h1>
-        <p className="text-lg">¡Bienvenido a mi página de ciberseguridad!</p>
-        <p className="text-sm text-gray-500">
-            Aquí encontrarás recursos y artículos sobre ciberseguridad.
-        </p>
-        </div>
+        <main>            
+            <Menu/>
+            <Logros/>
+            <Analisis/>
+            <Hacking/>
+            <Normativa/>
+        </main>
     );
     }

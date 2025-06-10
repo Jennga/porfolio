@@ -1,0 +1,19 @@
+.responsiveImg {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .responsiveImg {
+    width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .responsiveBtn {
+    padding: 0 0.4vw !important;
+    margin: 3vw !important;
+    font-size: 0.9rem !important;
+    height: 1.6rem !important;
+  }
+}
