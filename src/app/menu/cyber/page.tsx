@@ -4,7 +4,6 @@ import Logros from './Logros';
 import Analisis from './Analisis';
 import Hacking from './Hacking';
 import Normativa from './Normativa';
-import React, { useState, useEffect } from 'react';
 export default function CyberPage() {
     return (
         <main>            
