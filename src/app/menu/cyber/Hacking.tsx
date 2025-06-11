@@ -1,11 +1,29 @@
-import React from 'react';
+const gen1Style: React.CSSProperties = {
+    display: 'flex',
+    flexDirection: 'column',
+    background: '#A9B5DF',
+    borderRadius: '25px',
+    width: '75vw',
+    padding: '16px',
+    marginLeft: '5vw',
+    marginBottom: '2vw',
+}
 
-const Hacking: React.FC = () => {
+const h1Style: React.CSSProperties = {
+    color: '#FFFFFF',
+    fontSize: '2rem',
+    margin: '0',
+    borderRadius: '20px',
+    paddingLeft: '20px',
+    background: '#7886C7',
+    width: '30vw',
+    marginBottom: '1vw',
+}
+
+export default function Hacking() {
     return (
-        <nav>
-            {/* Menu content goes here */}
-        </nav>
-    );
-};
-
-export default Hacking;
+        <div style={gen1Style}>
+            <h1 style={h1Style}>Hacking Ético</h1>
+        </div>
+    )
+}

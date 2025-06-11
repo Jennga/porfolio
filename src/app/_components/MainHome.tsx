@@ -4,6 +4,7 @@ import ImageContainer from './ImageContainer';
 import Link from 'next/link';
 import Tecnology from './Tecnology';
 import React, { useState, useEffect } from 'react';
+import Logros from './Logros';
 
 // Hook para hover
 function useHoverStyle<T extends React.CSSProperties>(
@@ -56,7 +57,8 @@ const buttonsContainerStyle: React.CSSProperties = {
   width: 'auto',
   borderRadius: '1rem',
   padding: '0.625rem',
-  background: '#d1d3f9',
+  background: '#7886C7',
+  color: '#FFF2F2',
 };
 
 const buttonBase: React.CSSProperties = {
@@ -68,7 +70,6 @@ const buttonBase: React.CSSProperties = {
   height: '2.5rem',
   padding: '0 1rem',
   width: 'auto',
-  color: '#2D336B', // Mismo color para ambos
   background: 'transparent',
   gap: '0.5rem',
   cursor: 'pointer',
@@ -82,8 +83,7 @@ const buttonBaseDesktop: React.CSSProperties = {
 };
 
 const buttonHover: React.CSSProperties = {
-  color: '#FFF2F2', // Color en hover
-  background: '#7A86B6',
+  background: '#A9B5DF',
   borderRadius: '25px',
   boxShadow: `
             0 0 16px 4px rgba(72, 113, 181, 0.25), 
@@ -184,6 +184,7 @@ export default function MainHome() {
           />
         </div>
       )}
+      <Logros />
       <Tecnology />
     </main>
   );
