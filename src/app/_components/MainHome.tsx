@@ -3,8 +3,9 @@ import Image from 'next/image';
 import ImageContainer from './ImageContainer';
 import Link from 'next/link';
 import Tecnology from './Tecnology';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Logros from './Logros';
+import './MainHomeResponsive.css';
 
 // Hook para hover
 function useHoverStyle<T extends React.CSSProperties>(
@@ -19,23 +20,6 @@ function useHoverStyle<T extends React.CSSProperties>(
       onMouseLeave: () => setIsHover(false),
     },
   ];
-}
-
-// Hook para responsividad
-function useResponsiveValue<T>(mobile: T, desktop: T, breakpoint = 640): T {
-  const [value, setValue] = useState<T>(
-    typeof window !== 'undefined' && window.innerWidth >= breakpoint
-      ? desktop
-      : mobile
-  );
-  useEffect(() => {
-    function handleResize() {
-      setValue(window.innerWidth >= breakpoint ? desktop : mobile);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [breakpoint, desktop, mobile]);
-  return value;
 }
 
 const mainStyle: React.CSSProperties = {
@@ -75,13 +59,6 @@ const buttonBase: React.CSSProperties = {
   cursor: 'pointer',
 };
 
-const buttonBaseDesktop: React.CSSProperties = {
-  ...buttonBase,
-  fontSize: '1.125rem',
-  height: '3rem',
-  padding: '0 1.25rem',
-};
-
 const buttonHover: React.CSSProperties = {
   background: '#A9B5DF',
   borderRadius: '25px',
@@ -93,21 +70,18 @@ const buttonHover: React.CSSProperties = {
 };
 
 export default function MainHome() {
-  // Responsivo
-  const buttonStyle = useResponsiveValue(buttonBase, buttonBaseDesktop);
-
   // Hover para ambos
-  const [cvStyle, cvHoverProps] = useHoverStyle(buttonStyle, buttonHover);
-  const [cyberStyle, cyberHoverProps] = useHoverStyle(buttonStyle, buttonHover);
+  const [cvStyle, cvHoverProps] = useHoverStyle(buttonBase, buttonHover);
+  const [cyberStyle, cyberHoverProps] = useHoverStyle(buttonBase, buttonHover);
 
-    // Estado para mostrar el modal del PDF
+  // Estado para mostrar el modal del PDF
   const [showPdf, setShowPdf] = useState(false);
 
   return (
-    <main style={mainStyle}>
+    <main className="main-home" style={mainStyle}>
       <ImageContainer />
       <div style={buttonsContainerStyle}>
-         <button
+        <button
           style={cvStyle}
           type="button"
           {...cvHoverProps}

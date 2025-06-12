@@ -1,21 +1,17 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import "./MainHomeResponsive.css";
 
-const baseFooterStyle: React.CSSProperties = {
+const footerStyle: React.CSSProperties = {
   gridRowStart: 3,
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   gap: "1rem",
   flexWrap: "wrap",
   alignItems: "center",
   justifyContent: "center",
   width: "100%",
-};
-
-const rowFooterStyle: React.CSSProperties = {
-  flexDirection: "row",
-  gap: "24px",
 };
 
 const linkStyle: React.CSSProperties = {
@@ -33,66 +29,45 @@ const imageStyle: React.CSSProperties = {
   borderRadius: "9999px",
 };
 
-function useResponsiveFooterStyle() {
-  const [isRow, setIsRow] = React.useState(false);
-
-  React.useEffect(() => {
-    function handleResize() {
-      setIsRow(window.innerWidth >= 640);
-    }
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return isRow
-    ? { ...baseFooterStyle, ...rowFooterStyle }
-    : baseFooterStyle;
-}
-
-const FooterHome = () => {
-  const footerStyle = useResponsiveFooterStyle();
-
-  return (
-    <footer style={footerStyle}>
-      <a
-        style={linkStyle}
-        href="https://github.com/Jennga"
-        target="_blank"
-        rel="noopener noreferrer"
-        onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-        onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-      >
-        <Image
-          aria-hidden
-          src="/flor.jpg"
-          alt="File icon"
-          width={40}
-          height={40}
-          style={imageStyle}
-        />
-        GitHub: Jennga
-      </a>
-      <a
-        style={linkStyle}
-        href="https://www.linkedin.com/in/jennifer-galv%C3%A1n-bejarano-b68467318/"
-        target="_blank"
-        rel="noopener noreferrer"
-        onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-        onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-      >
-        <Image
-          aria-hidden
-          src="/linkedin.jpg"
-          alt="linkedin"
-          width={40}
-          height={40}
-          style={imageStyle}
-        />
-        LinkedIn
-      </a>
-    </footer>
-  );
-};
+const FooterHome = () => (
+  <footer style={footerStyle}>
+    <a
+      style={linkStyle}
+      href="https://github.com/Jennga"
+      target="_blank"
+      rel="noopener noreferrer"
+      onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
+      onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
+    >
+      <Image
+        aria-hidden
+        src="/flor.jpg"
+        alt="File icon"
+        width={40}
+        height={40}
+        style={imageStyle}
+      />
+      GitHub: Jennga
+    </a>
+    <a
+      style={linkStyle}
+      href="https://www.linkedin.com/in/jennifer-galv%C3%A1n-bejarano-b68467318/"
+      target="_blank"
+      rel="noopener noreferrer"
+      onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
+      onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
+    >
+      <Image
+        aria-hidden
+        src="/linkedin.jpg"
+        alt="linkedin"
+        width={40}
+        height={40}
+        style={imageStyle}
+      />
+      LinkedIn
+    </a>
+  </footer>
+);
 
 export default FooterHome;

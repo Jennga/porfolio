@@ -1,41 +1,54 @@
 import Image from 'next/image';
+import './MainHomeResponsive.css';
 
 export default function ImageContainer() {
+    // Estilos para escritorio (fila: texto izquierda, imagen derecha)
+    const containerStyle: React.CSSProperties = {
+        display: 'flex',
+        flexDirection: 'row-reverse', // Cambiado aquí
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        gap: '2rem',
+    };
+
+    const imgWrapperStyle: React.CSSProperties = {
+        display: 'flex',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        width: '50%',
+    };
+
     const textStyle: React.CSSProperties = {
         fontWeight: 'bold',
         WebkitTextStroke: '2px #FFF2F2',
         color: 'transparent',
         display: 'block',
+        textAlign: 'left',
+        fontSize: '2.5rem',
+        width: '50%',
     };
 
     return (
-        <div className="flex flex-col-reverse md:flex-row items-center md:items-center mt-[-120px] px-4">
-            <div className="flex-1 text-center md:text-left mt-6 md:mt-0">
-                <span
-                    style={textStyle}
-                    className="block text-4xl sm:text-5xl md:text-[4.5rem]"
-                >
+        <div className="image-container" style={containerStyle}>           
+            <div className="image-container__img-wrapper" style={imgWrapperStyle}>
+                <Image
+                    src="/caricaturamia.png"
+                    alt="caricatura"
+                    width={600}
+                    height={600}
+                    priority
+                    className="image-container__img"
+                />
+            </div>
+             <div className="image-container__text">
+                <span style={textStyle} className="image-container__name">
                     JENNIFER
                 </span>
                 <br />
-                <span
-                    style={textStyle}
-                    className="block text-3xl sm:text-4xl md:text-[3rem]"
-                >
+                <span style={textStyle} className="image-container__role">
                     CIBERSEGURIDAD
                 </span>
-            </div>
-            <div className="flex-1 flex justify-center md:justify-start md:ml-8 mb-6 md:mb-0 mt-20 md:mt-0">
-                <div className="w-full min-w-[35dvw] flex items-center">
-                    <Image
-                        src="/caricaturamia.png"
-                        alt="caricatura"
-                        width={600}
-                        height={600}
-                        priority
-                        className="w-full h-auto rounded-lg object-contain"
-                    />
-                </div>
             </div>
         </div>
     );
