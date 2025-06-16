@@ -6,16 +6,15 @@ import Normativa from './Normativa';
 import FooterHome from '@/app/_components/FooterHome';
 
 const globalblogStyle: React.CSSProperties = {
-    flex: 1
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh'
 };
 
 export default function CyberPage() {
     return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            minHeight: '100vh'
-        }}>
+        <div style={globalblogStyle}>
             <main style={globalblogStyle}>            
                 <Menu/>
                 <Analisis/>

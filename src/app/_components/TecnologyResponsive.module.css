@@ -1,0 +1,191 @@
+/*Estilos generales logo y tecno*/
+.general {
+        display: flex;
+        flex-direction: column;
+        background: #A9B5DF;
+        border-radius: 25px;
+        width: 90vw;
+        padding: 20px;
+        margin-bottom: 1.5vw;
+    }
+
+    .h1general {
+        color: #FFFFFF;
+        font-size: 2rem;
+        margin: 0;
+        border-radius: 20px;
+        padding-left: 20px;
+        background: #7886C7;
+        width: 30vw;
+        margin-bottom: 1vw;
+    }
+
+    .h2general {
+        color: #FFFFFF;
+        font-size: 1.3rem;
+        margin: 0;
+        padding-left: 20px;
+        width: 25vw;
+        margin-bottom: 1vw;
+        margin-left: 1.3vw;
+    }
+    .tecnoh3 {
+        color: #FFFFFF;
+        font-size: 1rem;
+        margin: 0;
+        padding-left: 20px;
+        width: 20vw;
+        margin-bottom: 1vw;
+    }
+    .tecnodiv{
+        padding: 0;
+        margin-left: 2vw;
+        margin-bottom: 1.3vw;
+    }
+    .cyber {
+        padding: 16px;
+        margin-left: 2vw;
+    }
+    .imagesTecno {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        margin-left: 1.3vw;
+        padding: 14px;
+        border-left: 3px solid #7886C7;
+        margin-bottom: 1.3vw;
+    }
+    .imgSizeLogo { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-bottom: 1.3vw;
+        border-left: 3px solid #7886C7;
+        border-top: none;
+        padding: 14px;
+        gap: 0;
+    }
+    .ctf {
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      height: 200px; 
+    }
+
+/*Estilos para TecnologyResponsive*/
+@media (max-width: 900px) {
+  .general {
+    padding: 8px !important;
+    border-radius: 12px !important; /* Mantén el border-radius en tablet */
+  }
+  .h1general{
+    font-size: 1.3rem !important;
+    padding-left: 10px !important;
+  }
+  .h2general {
+    width: 95vw !important;
+    font-size: 1.1rem !important;
+    padding-left: 10px !important;
+  }
+  .tecnoh3 {
+    width: 95vw !important;
+    font-size: 0.4rem !important;
+    padding-left: 10px !important;
+  }
+  .imagesTecno {
+    gap: 10px !important;
+    padding: 8px !important;
+    margin-left: 0 !important;
+    border-left: 2px solid #7886C7 !important;
+    border-top: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .general {
+    padding: 2vw !important;
+    border-radius: 20px !important; /* Solo en móvil */
+  }
+  .h1general {
+    width: 70vw !important;
+    font-size: 1.2rem !important;
+    padding-left: 5px !important;
+  }
+  .h2general {
+    width: 70vw !important;
+    font-size: 0.9rem !important;
+    padding-left: 5px !important;
+  }
+  .tecnoh3 {
+    width: 75vw !important;
+    font-size: 0.7rem !important;
+    padding-left: 5px !important;
+  }
+  .imagesTecno {
+    gap: 6px !important;
+    padding: 4px !important;
+    flex-direction: row !important;
+    border-left: 2px solid #A9B5DF !important;
+    justify-content: flex-start !important;
+  }
+  .imagenIndiv {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .general {
+    padding: 4vw !important;
+    border-radius: 20px !important; /* Solo en móvil */
+    margin: 0;
+  }
+  .h1general {
+    width: 60vw !important;
+    font-size: 1.2rem !important;
+    padding-left: 5px !important;
+  }
+  
+}
+
+/*Estilos para logros*/
+@media (max-width: 900px) {
+    .imgSizeLogo {
+    flex-direction: row !important; /* Fuerza horizontal siempre */
+    margin-left: 0 !important;
+    align-items: flex-start !important;
+  }
+  .ctf {
+    width: 80vw !important;
+    height: auto !important;
+    max-width: 200px !important;
+  }
+}
+
+/* Para móviles aún más pequeños */
+@media (max-width: 600px) {
+  .imgSizeLogo {
+    margin-left: 10px !important;
+  }
+  .ctf {
+    max-width: 100px !important;
+  }
+  .aws {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+@media (max-width: 320px) {
+    .ctf {
+    max-width: 80px !important;
+  }
+
+  .aws {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}

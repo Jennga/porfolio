@@ -24,9 +24,9 @@ export default function ImageContainer() {
         WebkitTextStroke: '2px #FFF2F2',
         color: 'transparent',
         display: 'block',
-        textAlign: 'left',
+        textAlign: 'center',
         fontSize: '2.5rem',
-        width: '50%',
+        width: '100%',
     };
 
     return (
