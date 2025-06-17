@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './TecnologyResponsive.module.css';
+import styles from './Tecnology.module.css';
 
 export default function Logros() {
     return (

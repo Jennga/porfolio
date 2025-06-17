@@ -1,43 +1,12 @@
-"use client";
 import Image from "next/image";
-import React from "react";
-import "./MainHomeResponsive.css";
-
-const footerStyle: React.CSSProperties = {
-  gridRowStart: 3,
-  display: "flex",
-  flexDirection: "row",
-  gap: "1rem",
-  flexWrap: "wrap",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-};
-
-const linkStyle: React.CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  gap: "0.5rem",
-  fontSize: "1.5rem",
-  padding: "0.5rem 1rem",
-  textDecoration: "none",
-  cursor: "pointer",
-  transition: "text-decoration 0.2s",
-};
-
-const imageStyle: React.CSSProperties = {
-  borderRadius: "9999px",
-};
+import styles from './MainHome.module.css';
 
 const FooterHome = () => (
-  <footer style={footerStyle}>
-    <a
-      style={linkStyle}
+  <footer className={styles.footer}>
+    <a className={styles.footer_a}
       href="https://github.com/Jennga"
       target="_blank"
       rel="noopener noreferrer"
-      onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-      onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
     >
       <Image
         aria-hidden
@@ -45,17 +14,14 @@ const FooterHome = () => (
         alt="File icon"
         width={40}
         height={40}
-        style={imageStyle}
+        className={styles.imgflor}
       />
       GitHub: Jennga
     </a>
-    <a
-      style={linkStyle}
+    <a className={styles.footer_a}
       href="https://www.linkedin.com/in/jennifer-galv%C3%A1n-bejarano-b68467318/"
       target="_blank"
-      rel="noopener noreferrer"
-      onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-      onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
+      rel="noopener noreferrer"     
     >
       <Image
         aria-hidden
@@ -63,7 +29,7 @@ const FooterHome = () => (
         alt="linkedin"
         width={40}
         height={40}
-        style={imageStyle}
+        className={styles.footer_img}
       />
       LinkedIn
     </a>
