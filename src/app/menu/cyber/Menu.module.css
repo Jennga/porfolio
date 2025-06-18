@@ -21,6 +21,7 @@
   width: 75vw;
   padding: 16px;
   margin-left: 5vw;
+  margin-right: 5vw;
   margin-bottom: 2vw;
 }
 
@@ -34,34 +35,53 @@
   width: 35vw;
   margin-bottom: 1vw;
 }
-
+ .introduccion {
+    width: 60vw;
+    text-align: center;
+    margin-left: 5vw;
+    font-size: 1.2rem;
+  }
+  
+  
 /* Responsivo para pantallas pequeñas */
 @media (max-width: 900px) {
   .divPadre {
-    width: 90vw;
-    margin-left: 2vw;
-    margin-top: 2vw;
+    width: auto;
     padding: 12px;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   .h1todos {
     width: 50vw;
     font-size: 1.5rem;
     padding-left: 10px;
   }
+ .introduccion {
+    width: auto;
+    margin-left: auto;
+    font-size: 1rem;
+  }
+ 
 }
 
 @media (max-width: 600px) {
   .divPadre {
-    width: 98vw;
-    margin-left: 1vw;
-    margin-top: 2vw;
+    width: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding: 8px;
   }
   .h1todos {
     width: 60vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 5px;
   }
+  .introduccion {
+    width: auto;
+    margin-left: auto;
+    font-size: 0.5rem;
+  }
+  
 }
 /*Estilos analisis*/
 /*Estilos hacking*/

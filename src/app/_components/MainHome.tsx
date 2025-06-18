@@ -64,7 +64,7 @@ export default function MainHome() {
             onClick={e => e.stopPropagation()}
           />
         </div>
-      )}
+        )}
       <Logros />
       <Tecnology />
     </main>

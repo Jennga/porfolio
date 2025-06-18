@@ -4,9 +4,12 @@
         flex-direction: column;
         background: #A9B5DF;
         border-radius: 25px;
-        width: 90vw;
-        padding: 20px;
-        margin-bottom: 1.5vw;
+        width: 99vw;
+        max-width: 100%; /* Limita el ancho en escritorio */
+        padding: 12px 8px 12px 12px !important;
+        justify-content: center;
+        margin: 0 auto;
+        box-sizing: border-box; 
     }
 
     .h1general {
@@ -16,7 +19,7 @@
         border-radius: 20px;
         padding-left: 20px;
         background: #7886C7;
-        width: 30vw;
+        width: 25vw; /* Cambia a auto */
         margin-bottom: 1vw;
     }
 
@@ -25,9 +28,9 @@
         font-size: 1.3rem;
         margin: 0;
         padding-left: 20px;
-        width: 25vw;
+        width: auto; /* Cambia a auto */
         margin-bottom: 1vw;
-        margin-left: 1.3vw;
+        margin-left: 0; /* Elimina desplazamiento */
     }
     .tecnoh3 {
         color: #FFFFFF;
@@ -78,8 +81,11 @@
 /*Estilos para TecnologyResponsive*/
 @media (max-width: 900px) {
   .general {
-    padding: 8px !important;
-    border-radius: 12px !important; /* Mantén el border-radius en tablet */
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 4vw !important;
+    border-radius: 12px !important;
+    margin: 0 auto !important;
   }
   .h1general{
     font-size: 1.3rem !important;
@@ -103,11 +109,13 @@
     border-top: none !important;
   }
 }
-
 @media (max-width: 600px) {
   .general {
+    width: 100% !important;
+    max-width: 100% !important;
     padding: 2vw !important;
-    border-radius: 20px !important; /* Solo en móvil */
+    border-radius: 20px !important;
+    margin: 0 auto !important;
   }
   .h1general {
     width: 70vw !important;
@@ -128,7 +136,7 @@
     gap: 6px !important;
     padding: 4px !important;
     flex-direction: row !important;
-    border-left: 2px solid #A9B5DF !important;
+    border-left: 2px solid #7886C7 !important;
     justify-content: flex-start !important;
   }
   .imagenIndiv {
@@ -139,16 +147,22 @@
 
 @media (max-width: 320px) {
   .general {
+    width: 100% !important;
+    max-width: 100% !important;
     padding: 4vw !important;
-    border-radius: 20px !important; /* Solo en móvil */
-    margin: 0;
+    border-radius: 20px !important;
+    margin: 0 auto !important;
   }
   .h1general {
     width: 60vw !important;
     font-size: 1.2rem !important;
     padding-left: 5px !important;
   }
-  
+  .imagesTecno {
+    border-left: 2px solid #7886C7 !important;
+    margin-left: 8px !important;
+  }
+
 }
 
 /*Estilos para logros*/
