@@ -34,14 +34,28 @@
   background: #A9B5DF;
   width: 35vw;
   margin-bottom: 1vw;
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: space-between;
 }
  .introduccion {
+    display: flex;
+    flex-direction: row;
     width: 60vw;
     text-align: center;
     margin-left: 5vw;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  
+  .frase {
+    padding: 20px;
+  }
+  .imgintro {
+    align-self: flex-start;
+    width: 100px;
+    height: auto;
+    max-height: 90px;
+    object-fit: contain;
+  }  
   
 /* Responsivo para pantallas pequeñas */
 @media (max-width: 900px) {
@@ -60,6 +74,11 @@
     width: auto;
     margin-left: auto;
     font-size: 1rem;
+  }
+  .imgintro {
+    width: 80px;
+    height: auto;
+    max-height: 70px;
   }
  
 }
@@ -81,7 +100,28 @@
     margin-left: auto;
     font-size: 0.5rem;
   }
-  
+  .imgintro {
+    width: 50px;
+    height: auto;
+    max-height: 50px;
+  }
+}
+
+/*Tarejtas*/
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
+}
+.tarjeta {
+  border-radius: 20px;
+  border: solid 1px #A9B5DF;
+  background: #A9B5DF;
+  padding: 16px;
+  margin: 16px 0;
+  width: 32%;
 }
 /*Estilos analisis*/
 /*Estilos hacking*/

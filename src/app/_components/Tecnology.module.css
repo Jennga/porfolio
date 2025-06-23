@@ -21,6 +21,10 @@
         background: #7886C7;
         width: 25vw; /* Cambia a auto */
         margin-bottom: 1vw;
+        display: flex;
+        align-items: center; /* Alinea verticalmente */
+        justify-content: space-between;
+
     }
 
     .h2general {
@@ -77,6 +81,23 @@
       width: 300px;
       height: 200px; 
     }
+    .toggleBtn {
+      margin-right: 16px;      /* separa el botón del texto */
+      border-radius: 50%;     /* bordes redondeados, puedes usar 8px si prefieres menos redondo */
+      border: none;
+      background: transparent;
+      padding: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+  }
+
+    .toggleBtn:hover {
+      background: #f0f0f0;    /* efecto al pasar el mouse, opcional */
+    }
+    .toggleIcon {
+      border-radius: 50%;
+      overflow: hidden;
+    }
 
 /*Estilos para TecnologyResponsive*/
 @media (max-width: 900px) {
@@ -90,6 +111,7 @@
   .h1general{
     font-size: 1.3rem !important;
     padding-left: 10px !important;
+    width: auto !important;   ;
   }
   .h2general {
     width: 95vw !important;
@@ -118,7 +140,7 @@
     margin: 0 auto !important;
   }
   .h1general {
-    width: 70vw !important;
+    width: auto !important;
     font-size: 1.2rem !important;
     padding-left: 5px !important;
   }
@@ -203,3 +225,4 @@
     height: 70px !important;
   }
 }
+
