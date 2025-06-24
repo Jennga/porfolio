@@ -3,6 +3,7 @@ import Image from 'next/image';
 import TarjetaBlog from './_components/TarjetaBlog';
 import React from 'react'; 
 import tecnologyStyles from '../../_components/Tecnology.module.css';
+import Link from 'next/link';
 
 export default function Normativa() {
     const [showTec, setShowTec] = React.useState(false);
@@ -55,6 +56,21 @@ export default function Normativa() {
                     <TarjetaBlog key={index} blog={blog} />
                 </>))}
                 </div>
+                <div className={styles.plus}>
+                        <Link href="../modulos/normativa" onClick={() => setShowTec(!showTec)} className={tecnologyStyles.toggleBtn}>
+                            <Image
+                                src="/plus.svg"
+                                alt="plus"
+                                width={50}
+                                height={50}
+                                className={tecnologyStyles.toggleIcon}
+                                style={{
+                                    transform: showTec ? 'rotate(180deg)' : 'rotate(0deg)',
+                                    transition: 'transform 0.2s'
+                                }}
+                            />
+                        </Link>
+                    </div>
                 </>
             )}
         </div>

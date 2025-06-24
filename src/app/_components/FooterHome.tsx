@@ -29,7 +29,7 @@ const FooterHome = () => (
         alt="linkedin"
         width={40}
         height={40}
-        className={styles.footer_img}
+        className={styles.imgflor}
       />
       LinkedIn
     </a>

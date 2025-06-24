@@ -3,6 +3,7 @@ import styles from './Menu.module.css';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import tecnologyStyles from '../../_components/Tecnology.module.css';
+import Link from 'next/link';
 
 export default function Analisis() {
     const [showTec, setShowTec] = useState(false);
@@ -64,8 +65,23 @@ export default function Analisis() {
                             <TarjetaBlog key={index} blog={blog} />
                         ))}
                     </div>
-                </>
-            )}
+                    <div className={styles.plus}>
+                        <Link href="../modulos/analisis" onClick={() => setShowTec(!showTec)} className={tecnologyStyles.toggleBtn}>
+                            <Image
+                                src="/plus.svg"
+                                alt="plus"
+                                width={50}
+                                height={50}
+                                className={tecnologyStyles.toggleIcon}
+                                style={{
+                                    transform: showTec ? 'rotate(180deg)' : 'rotate(0deg)',
+                                    transition: 'transform 0.2s'
+                                }}
+                            />
+                        </Link>
+                    </div>
+                </>                
+            )}           
         </div>
     );
 }

@@ -19,7 +19,8 @@
   background: #7886C7;
   border-radius: 25px;
   width: 75vw;
-  padding: 16px;
+  padding: 30px;
+  padding-bottom: 40px;
   margin-left: 5vw;
   margin-right: 5vw;
   margin-bottom: 2vw;
@@ -56,6 +57,10 @@
     max-height: 90px;
     object-fit: contain;
   }  
+  .plus {
+    display: flex;
+    justify-content: flex-end;
+  }
   
 /* Responsivo para pantallas pequeñas */
 @media (max-width: 900px) {

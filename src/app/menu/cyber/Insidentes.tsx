@@ -3,6 +3,7 @@ import Image from 'next/image';
 import TarjetaBlog from './_components/TarjetaBlog';
 import React from 'react'; 
 import tecnologyStyles from '../../_components/Tecnology.module.css';
+import Link from 'next/link';
 
 export default function Insidentes() {
     const [showTec, setShowTec] = React.useState(false);
@@ -28,7 +29,7 @@ export default function Insidentes() {
     ];
     return (
         <div className={styles.divPadre}>
-            <h1 className={styles.h1todos}>Incidentes Ciberseguridad
+            <h1 className={styles.h1todos}>Incidentes
                 <button onClick={() => setShowTec(!showTec)} className={tecnologyStyles.toggleBtn}>
                     <Image
                         src="/down.svg"
@@ -55,6 +56,21 @@ export default function Insidentes() {
                         <TarjetaBlog key={index} blog={blog} />
                     </>))}
                 </div>
+                <div className={styles.plus}>
+                        <Link href="../modulos/incidentes" onClick={() => setShowTec(!showTec)} className={tecnologyStyles.toggleBtn}>
+                            <Image
+                                src="/plus.svg"
+                                alt="plus"
+                                width={50}
+                                height={50}
+                                className={tecnologyStyles.toggleIcon}
+                                style={{
+                                    transform: showTec ? 'rotate(180deg)' : 'rotate(0deg)',
+                                    transition: 'transform 0.2s'
+                                }}
+                            />
+                        </Link>
+                    </div>
                 </>
             )}
         </div>
