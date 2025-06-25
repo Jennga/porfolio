@@ -39,7 +39,7 @@ export default function Menu() {
 
   return (
     <>
-    <nav>
+    <nav className={styles.nav}>
       <Link
         href="/"
         style={{

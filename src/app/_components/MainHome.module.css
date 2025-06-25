@@ -315,7 +315,7 @@
   .footer {
     flex-direction: row !important;
     gap: 0.2rem !important;
-    margin-left: -30px !important;
+    margin-left: 5px !important;
   }
   .footer_a {
     font-size: 0.7rem !important;

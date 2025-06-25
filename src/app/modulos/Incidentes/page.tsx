@@ -41,12 +41,12 @@ export default function Page() {
     return (
          <div style={globalblogStyle}>
             <main style={globalblogStyle}>         
-                <Fondo logoSrc="/modulos/cariNormativa.png" logoAlt="normativa" title="NORMATIVA"/> 
+                <Fondo logoSrc="/modulos/cariIncidentes.png" logoAlt="incidentes" title="INCIDENTES"/>                
                 <div className={styles.tarjetas}>
                         {tarjetas.map((blog, index) => (
                             <TarjetaBlog key={index} blog={blog} />
                         ))}
-                    </div>               
+                    </div>                
             </main>
                 <FooterHome/>
         </div>  

@@ -2,7 +2,7 @@
 import Menu from './Menu';
 import Analisis from './Analisis';
 import Hacking from './Hacking';
-import Insidentes from './Insidentes';
+import Incidentes from './Incidentes';
 import Normativa from './Normativa';
 import FooterHome from '@/app/_components/FooterHome';
 
@@ -20,7 +20,7 @@ export default function CyberPage() {
                 <Menu/>
                 <Analisis/>
                 <Hacking/>
-                <Insidentes/>
+                <Incidentes/>
                 <Normativa/>
             </main>
             <FooterHome/>

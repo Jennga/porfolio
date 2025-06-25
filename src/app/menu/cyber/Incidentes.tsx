@@ -5,7 +5,7 @@ import React from 'react';
 import tecnologyStyles from '../../_components/Tecnology.module.css';
 import Link from 'next/link';
 
-export default function Insidentes() {
+export default function Incidentes() {
     const [showTec, setShowTec] = React.useState(false);
     const tarjetas = [
         {
@@ -47,7 +47,7 @@ export default function Insidentes() {
               {showTec && (
                 <>
                 <div className={styles.introduccion}>
-                    <Image src="/modulos/cariInsidentes.png" alt="insidentes" width={100} height={90} style={{ transform: 'scaleX(-1)' }} className={styles.imgintro}/>
+                    <Image src="/modulos/cariIncidentes.png" alt="incidentes" width={100} height={90} style={{ transform: 'scaleX(-1)' }} className={styles.imgintro}/>
                     <div className={styles.frase}>Los incidentes en ciberseguridad son eventos que comprometen la confidencialidad, integridad o disponibilidad de la información o los sistemas informáticos.                  
                     </div>
                 </div>            
@@ -57,7 +57,7 @@ export default function Insidentes() {
                     </>))}
                 </div>
                 <div className={styles.plus}>
-                        <Link href="../modulos/incidentes" onClick={() => setShowTec(!showTec)} className={tecnologyStyles.toggleBtn}>
+                        <Link href="../modulos/Incidentes" onClick={() => setShowTec(!showTec)} className={tecnologyStyles.toggleBtn}>
                             <Image
                                 src="/plus.svg"
                                 alt="plus"
