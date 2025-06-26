@@ -4,21 +4,43 @@ type Blog = {
     titulo: string;
     descripcion: string;
     imagen?: string;
-    fecha?: string;
+    pdfUrl?: string;
 };
-const TarjetaBlog = ({ blog }: { blog: Blog }) => {
+
+type TarjetaBlogProps = {
+    blog: Blog;
+    onPdfClick?: (pdfUrl: string, title: string) => void;
+};
+
+const TarjetaBlog = ({ blog, onPdfClick }: TarjetaBlogProps) => {
+    const handleClick = () => {
+        if (blog.pdfUrl && onPdfClick) {
+            onPdfClick(blog.pdfUrl, blog.titulo);
+        }
+    };
+
     return (
-        <div className={styles.tarjeta}>
-            <h2 >{blog.titulo}</h2>
-            <p >{blog.descripcion}</p>
-            {blog.imagen && (
-                <img
-                    src={blog.imagen}
-                    alt={blog.titulo}
-                />
-            )}
-            {blog.fecha && (
-                <p >{new Date(blog.fecha).toLocaleDateString()}</p>
+        <div 
+            className={`${styles.tarjeta} ${blog.pdfUrl ? styles.clickable : ''}`}
+            onClick={handleClick}
+        >
+            <div>
+                <h2 className={styles.h2tarj}>{blog.titulo}</h2>
+                <p className={styles.ptarj}>{blog.descripcion}</p>
+            </div>
+            <div style={{ height: '75%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                {blog.imagen && (
+                    <img
+                        src={blog.imagen}
+                        alt={blog.titulo}
+                        className={styles.imgtarj}
+                    />
+                )}
+            </div>
+            {blog.pdfUrl && (
+                <div className={styles.pdfIndicator}>
+                    📄 Click para ver PDF
+                </div>
             )}
         </div>
     );
