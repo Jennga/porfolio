@@ -27,12 +27,6 @@ export default function Normativa() {
             descripcion: "Conoce los métodos para recuperar datos perdidos o dañados en sistemas comprometidos.",
             imagen: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center",
             pdfUrl: "/cv.pdf" 
-        },
-         {
-            titulo: "Análisis de Vulnerabilidades",
-            descripcion: "Identifica y evalúa vulnerabilidades en sistemas y aplicaciones para fortalecer la seguridad.",
-            imagen: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
         }
     ];
 
@@ -85,7 +79,7 @@ export default function Normativa() {
                             />
                         ))}
                     </div>
-                    <div className={styles.plus}>
+                    {/*<div className={styles.plus}>
                         <Link href="../modulos/normativa" onClick={() => setShowTec(!showTec)} className={tecnologyStyles.toggleBtn}>
                             <Image
                                 src="/plus.svg"
@@ -99,7 +93,7 @@ export default function Normativa() {
                                 }}
                             />
                         </Link>
-                    </div>
+                    </div>*/}
                 </>                
             )}
             

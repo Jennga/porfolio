@@ -1,5 +1,7 @@
 import styles from '../Menu.module.css';
- 
+import Image from 'next/image';
+import React, { useState } from 'react';
+
 type Blog = {
     titulo: string;
     descripcion: string;
@@ -13,8 +15,11 @@ type TarjetaBlogProps = {
 };
 
 const TarjetaBlog = ({ blog, onPdfClick }: TarjetaBlogProps) => {
+    const [showTec, setShowTec] = useState(false);
+    
     const handleClick = () => {
         if (blog.pdfUrl && onPdfClick) {
+            setShowTec(!showTec);
             onPdfClick(blog.pdfUrl, blog.titulo);
         }
     };
@@ -39,7 +44,13 @@ const TarjetaBlog = ({ blog, onPdfClick }: TarjetaBlogProps) => {
             </div>
             {blog.pdfUrl && (
                 <div className={styles.pdfIndicator}>
-                    📄 Click para ver PDF
+                     <Image
+                        src="/pdf.svg"
+                        alt="pfd"
+                        width={50}
+                        height={22}
+                        className={`${styles.pdfIcon} ${showTec ? styles.pdfIconPressed : ''}`}
+                        />
                 </div>
             )}
         </div>

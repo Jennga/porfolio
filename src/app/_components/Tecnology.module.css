@@ -28,7 +28,7 @@
     }
 
     .h2general {
-        color: #FFFFFF;
+        color: #101551;
         font-size: 1.3rem;
         margin: 0;
         padding-left: 20px;
@@ -37,7 +37,7 @@
         margin-left: 0; /* Elimina desplazamiento */
     }
     .tecnoh3 {
-        color: #FFFFFF;
+        color: #363d7c;
         font-size: 1rem;
         margin: 0;
         padding-left: 20px;
@@ -74,6 +74,8 @@
         border-top: none;
         padding: 14px;
         gap: 0;
+        color:#363d7c;
+        font-size: 1.3rem;
     }
     .ctf {
       display: flex;
