@@ -4,7 +4,7 @@ import TarjetaBlog from './_components/TarjetaBlog';
 import PDFViewer from './_components/PDFViewer';
 import React, { useState } from 'react';
 import tecnologyStyles from '../../_components/Tecnology.module.css';
-import Link from 'next/link';
+{/*import Link from 'next/link';*/}
 
 export default function Incidentes() {
     const [showTec, setShowTec] = React.useState(false);

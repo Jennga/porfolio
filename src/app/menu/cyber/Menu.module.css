@@ -140,6 +140,7 @@
   box-sizing: border-box;
   transition: box-shadow 0.2s;
   aspect-ratio: 1 / 1;
+  position: relative;
 }
 .h2tarj {
   color: #101551;
@@ -323,10 +324,4 @@
 
 .downloadButton:hover {
   background: #45a049;
-}
-
-/* Hacer tarjetas relativas para el indicador PDF */
-.tarjeta {
-  position: relative;
-  /* ...existing styles... */
 }

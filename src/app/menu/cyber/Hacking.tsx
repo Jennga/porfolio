@@ -4,7 +4,7 @@ import Image from 'next/image';
 import TarjetaBlog from './_components/TarjetaBlog';
 import PDFViewer from './_components/PDFViewer';
 import tecnologyStyles from '../../_components/Tecnology.module.css';
-import Link from 'next/link';
+{/*import Link from 'next/link';*/}
 
 export default function Hacking() {
     const [showTec, setShowTec] = React.useState(false);

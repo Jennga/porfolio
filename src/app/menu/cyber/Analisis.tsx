@@ -4,7 +4,7 @@ import styles from './Menu.module.css';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import tecnologyStyles from '../../_components/Tecnology.module.css';
-import Link from 'next/link';
+{/*import Link from 'next/link';*/}
 
 export default function Analisis() {
     const [showTec, setShowTec] = useState(false);
