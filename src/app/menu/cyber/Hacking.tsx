@@ -11,10 +11,10 @@ export default function Hacking() {
     const [pdfViewer, setPdfViewer] = useState({ isOpen: false, pdfUrl: '', title: '' });
      const tarjetas = [
         {
-            titulo: "Análisis",
-            descripcion: "Explora las técnicas y herramientas para analizar malware y entender su funcionamiento.",
-            imagen: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Hacking Wifi",
+            descripcion: "Desenmascarando redes WiFi: del laboratorio a la realidad, un viaje ético al corazón de la ciberseguridad.",
+            imagen: "/pdf/hacking/hakingWifi.png",
+            pdfUrl: "/pdf/hacking/HackeoRedeswifi.pdf" 
         },
         {
             titulo: "Investigación de Incidentes",

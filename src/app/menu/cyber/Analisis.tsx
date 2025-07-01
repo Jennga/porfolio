@@ -12,22 +12,22 @@ export default function Analisis() {
     
     const tarjetas = [
        {
-            titulo: "Análisis",
-            descripcion: "Explora las técnicas y herramientas para analizar malware y entender su funcionamiento.",
-            imagen: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Cold-Clone",
+            descripcion: "Guía práctica para capturar evidencias digitales en sistemas apagados, clonarlas sin alterar nada y verificar su integridad como lo haría un verdadero analista forense. Ideal para quienes quieren aprender haciendo.",
+            imagen: "/pdf/analisis/coldCloning.png",
+            pdfUrl: "/pdf/analisis/AdEviApagado.pdf" 
         },
         {
-            titulo: "Investigación de Incidentes",
-            descripcion: "Aprende a investigar incidentes de seguridad y a recopilar evidencia digital.",
-            imagen: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Adquisicion de evidencias Caliente",
+            descripcion: "Domina el arte de capturar la memoria RAM en sistemas activos antes de que desaparezca la evidencia. Esta guía te enseña a congelar lo efímero en segundos.",
+            imagen: "/pdf/analisis/HotCloning.png",
+            pdfUrl: "/pdf/analisis/AdEviCaliente.pdf" 
         },
         {
-            titulo: "Recuperación de Datos",
-            descripcion: "Conoce los métodos para recuperar datos perdidos o dañados en sistemas comprometidos.",
-            imagen: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Volatility en Linux",
+            descripcion: "Explorando la memoria volátil para descubrir la verdad digital en sistemas Linux.",
+            imagen: "/pdf/analisis/volatilityLinux.png",
+            pdfUrl: "/pdf/analisis/volatilityLinux.pdf" 
         }
     ];
 
