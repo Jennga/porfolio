@@ -4,8 +4,15 @@ import styles from './Tecnology.module.css';
 
 export default function Logros() {
      const [showTec, setShowTec] = useState(false);
+     const [expandedImage, setExpandedImage] = useState(false);
     return (
         <div className={styles.general}>
+            {expandedImage && (
+                <div 
+                    className={styles.overlay} 
+                    onClick={() => setExpandedImage(false)}
+                />
+            )}
             <h1 className={styles.h1general}>Logros
                 <button onClick={() => setShowTec(!showTec)} className={styles.toggleBtn}>
                     <Image
@@ -52,9 +59,11 @@ export default function Logros() {
                     <Image
                         src="/logros/Cert.png"
                         alt="certificadohacking"
-                        className={styles.ctf}
+                        className={`${styles.ctf} ${expandedImage ? styles.ctfExpanded : ''}`}
                         width={800}
                         height={200}
+                        onClick={() => setExpandedImage(!expandedImage)}
+                        style={{ cursor: 'pointer' }}
                     />
                 </div>
                 </>

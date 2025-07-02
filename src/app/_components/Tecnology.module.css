@@ -101,6 +101,112 @@
       overflow: hidden;
     }
 
+/* Estilos para imagen expandida */
+.ctfExpanded {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 1000 !important;
+    background: white !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
+    padding: 15px !important;
+    max-width: 70vw !important;
+    max-height: 70vh !important;
+    width: 600px !important;
+    height: auto !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Responsive para imagen expandida */
+@media (max-width: 900px) {
+    .ctfExpanded.ctfExpanded.ctfExpanded {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        max-width: 85vw !important;
+        max-height: 60vh !important;
+        width: 450px !important;
+        height: auto !important;
+        padding: 12px !important;
+        z-index: 1001 !important;
+        display: block !important;
+    }
+    
+    /* Anular estilos conflictivos del .ctf base */
+    .ctf.ctfExpanded {
+        display: block !important;
+        flex-direction: unset !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .ctfExpanded.ctfExpanded.ctfExpanded {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        max-width: 90vw !important;
+        max-height: 50vh !important;
+        width: 350px !important;
+        height: auto !important;
+        padding: 10px !important;
+        border-radius: 8px !important;
+        z-index: 1001 !important;
+        display: block !important;
+    }
+    
+    /* Anular estilos conflictivos del .ctf base */
+    .ctf.ctfExpanded {
+        display: block !important;
+        flex-direction: unset !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .ctfExpanded.ctfExpanded.ctfExpanded {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        max-width: none !important;
+        max-height: none !important;
+        width: 280px !important;
+        height: 160px !important;
+        padding: 2px !important;
+        border-radius: 3px !important;
+        object-fit: cover !important;
+        z-index: 1001 !important;
+        display: block !important;
+    }
+    
+    /* Anular estilos conflictivos del .ctf base */
+    .ctf.ctfExpanded {
+        display: block !important;
+        flex-direction: unset !important;
+    }
+}
+
+.ctf {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Overlay para el fondo cuando la imagen está expandida */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Estilos para TecnologyResponsive*/
 @media (max-width: 900px) {
   .general {

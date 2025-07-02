@@ -11,22 +11,22 @@ export default function Normativa() {
     const [pdfViewer, setPdfViewer] = useState({ isOpen: false, pdfUrl: '', title: '' });
     const tarjetas = [
         {
-            titulo: "Análisis",
-            descripcion: "Explora las técnicas y herramientas para analizar malware y entender su funcionamiento.",
-            imagen: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Normativa vigente",
+            descripcion: "Normativa vigente: el escudo legal que define y protege la ciberseguridad en España.",
+            imagen: "/pdf/normativa/normativaVigente.png",
+            pdfUrl: "/pdf/normativa/NormVigente.pdf" 
         },
         {
-            titulo: "Investigación de Incidentes",
-            descripcion: "Aprende a investigar incidentes de seguridad y a recopilar evidencia digital.",
-            imagen: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Sistemas de Compliance: Cumplir, Prevenir y Proteger",
+            descripcion: "El compliance no es opcional: es la barrera ética y legal que sostiene a las empresas responsables.",
+            imagen: "/pdf/normativa/sistemaComplice.png",
+            pdfUrl: "/pdf/normativa/sistemaComplice.pdf" 
         },
         {
-            titulo: "Recuperación de Datos",
-            descripcion: "Conoce los métodos para recuperar datos perdidos o dañados en sistemas comprometidos.",
-            imagen: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Ensayo Proteccion de datos",
+            descripcion: "Protección de datos: políticas, tecnología y personas unidas para blindar la información del usuario",
+            imagen: "/pdf/normativa/proteccionDatos.png",
+            pdfUrl: "/pdf/normativa/proteccionDatos.pdf" 
         }
     ];
 

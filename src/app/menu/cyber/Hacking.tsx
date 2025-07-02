@@ -17,16 +17,16 @@ export default function Hacking() {
             pdfUrl: "/pdf/hacking/HackeoRedeswifi.pdf" 
         },
         {
-            titulo: "Investigación de Incidentes",
-            descripcion: "Aprende a investigar incidentes de seguridad y a recopilar evidencia digital.",
-            imagen: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Pivotaje",
+            descripcion: "Domino el arte del pivotaje: cuando una puerta se cierra, yo tunelizo otra",
+            imagen: "/pdf/hacking/pivotaje.png",
+            pdfUrl: "/pdf/hacking/pivotaje.pdf" 
         },
         {
-            titulo: "Recuperación de Datos",
-            descripcion: "Conoce los métodos para recuperar datos perdidos o dañados en sistemas comprometidos.",
-            imagen: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center",
-            pdfUrl: "/cv.pdf" 
+            titulo: "Metasploit",
+            descripcion: "Metasploit no solo encuentra vulnerabilidades, las convierte en oportunidades para aprender, asegurar y dominar el arte del hacking ético",
+            imagen: "/pdf/hacking/metasploit.png",
+            pdfUrl: "/pdf/hacking/metasploit.pdf" 
         }
     ];
 
