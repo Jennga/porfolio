@@ -45,7 +45,7 @@ export default function Tecnology() {
                                 <Image className={styles.imagenIndiv} src="tecno/autopsy.svg" alt="autopsy" width={60} height={60}/>
                                 <Image className={styles.imagenIndiv} src="tecno/Avilla.svg" alt="avilla" width={60} height={60}/>
                                 <Image className={styles.imagenIndiv} src="tecno/volatility.svg" alt="volatility" width={60} height={60}/>
-                                <Image className={styles.imagenIndiv} src="tecno/Photorec.svg" alt="photorec" width={60} height={60}/>
+                                <Image className={styles.imagenIndiv} src="tecno/PhotoRec.svg" alt="photorec" width={60} height={60}/>
                                 <Image className={styles.imagenIndiv} src="tecno/TestDisk.svg" alt="tedisk" width={60} height={60}/>
                                 <Image className={styles.imagenIndiv} src="tecno/active.svg" alt="active" width={60} height={60}/>
                             </div>
