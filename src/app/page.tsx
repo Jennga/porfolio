@@ -1,5 +1,6 @@
 import MainHome from "./_components/MainHome";
 import FooterHome from "./_components/FooterHome";
+import { jsonLd, organizationJsonLd } from "./lib/structured-data";
 
 // Definir las clases en una constante
 const containerClass =
@@ -19,9 +20,21 @@ const containerClass =
 
 export default function Home() {
   return (
-    <div className={containerClass}>
-      <MainHome />
-      <FooterHome />
-    </div>
+    <>
+      {/* Datos estructurados para SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      
+      <div className={containerClass}>
+        <MainHome />
+        <FooterHome />
+      </div>
+    </>
   );
 }

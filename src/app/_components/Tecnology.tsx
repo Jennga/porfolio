@@ -28,7 +28,7 @@ export default function Tecnology() {
             {showTec && (
                 <>            
                     <div className={styles.tecnodiv}>
-                        <h2 className={styles.h2general}>Sistemas Operatiavos</h2>
+                        <h2 className={styles.h2general}>Sistemas Operativos</h2>
                         <div className={styles.imagesTecno}>
                             <Image className={styles.imagenIndiv} src="tecno/debian.svg" alt="debian" width={60} height={60}/>
                             <Image className={styles.imagenIndiv} src="tecno/kali.svg" alt="kali" width={60} height={60}/>
